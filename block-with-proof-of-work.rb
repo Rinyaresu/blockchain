@@ -20,3 +20,22 @@ class Block
   end
 end
 
+p Block.new('hello world!')
+
+p Block.new('hello world again!')
+
+p Block.new('Kaique')
+
+p Block.new('Linhares')
+
+p Block.new('Anime Anime Anime')
+
+Digest::SHA256.hexdigest('26762hello world!')
+
+Digest::SHA256.hexdigest('68419hello world again!')
+
+Digest::SHA256.hexdigest('23416Kaique')
+
+Digest::SHA256.hexdigest('23416Linhares')
+
+Digest::SHA256.hexdigest('15353Anime Anime Anime')
