@@ -6,12 +6,12 @@ p Digest::SHA256.hexdigest('Kaique')
 
 p Digest::SHA256.hexdigest('Linhares')
 
-p Digest::SHA256.hexdigest(<<TXT)
-  Data Data Data Data Data Data
-  Data Data Data Data Data Data
-  Data Data Data Data Data Data
-  Data Data Data Data Data Data
-  Data Data Data Data Data Data
+p Digest::SHA256.hexdigest(<TXT)
+  Anime Anime Anime
+  Anime Anime Anime
+  Anime Anime Anime
+  Anime Anime Anime
+  Anime Anime Anime
 TXT
 
 p Digest::SHA256.hexdigest('Kaique').length
