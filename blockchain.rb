@@ -22,3 +22,18 @@ class Block
     end
   end
 end
+
+p b0 = Block.new('hello world!', '0000000000000000000000000000000000000000000000000000000000000000')
+
+p b1 = Block.new('hello world again!', b0.hash)
+
+p b2 = Block.new('Kaique', b1.hash)
+
+p b3 = Block.new('Linhares', b2.hash)
+
+p b4 = Block.new('Anime Anime Anime', b3.hash)
+
+blockchain = [b0, b1, b2, b3, b4]
+
+pp blockchain
+
