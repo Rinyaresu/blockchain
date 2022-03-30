@@ -41,3 +41,14 @@ p b0.prev == '0000000000000000000000000000000000000000000000000000000000000000'
 p b1.prev == b0.hash
 p b2.prev == b1.hash
 p b3.prev == b2.hash
+
+p b0.hash == Digest::SHA256.hexdigest("#{b0.nonce}#{b0.prev}#{b0.data}")
+p b1.hash == Digest::SHA256.hexdigest("#{b1.nonce}#{b1.prev}#{b1.data}")
+p b2.hash == Digest::SHA256.hexdigest("#{b2.nonce}#{b2.prev}#{b2.data}")
+p b3.hash == Digest::SHA256.hexdigest("#{b3.nonce}#{b3.prev}#{b3.data}")
+
+p b0.hash.start_with?('0000')
+p b1.hash.start_with?('0000')
+p b2.hash.start_with?('0000')
+p b3.hash.start_with?('0000')
+
