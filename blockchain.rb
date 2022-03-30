@@ -37,3 +37,7 @@ blockchain = [b0, b1, b2, b3, b4]
 
 pp blockchain
 
+p b0.prev == '0000000000000000000000000000000000000000000000000000000000000000'
+p b1.prev == b0.hash
+p b2.prev == b1.hash
+p b3.prev == b2.hash
