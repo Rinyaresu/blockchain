@@ -52,3 +52,12 @@ p b1.hash.start_with?('0000')
 p b2.hash.start_with?('0000')
 p b3.hash.start_with?('0000')
 
+b1 = Block.new('Hello, world!', b0.hash)
+
+b0.prev == '0000000000000000000000000000000000000000000000000000000000000000'
+
+b1.prev == b0.hash
+
+b2.prev == b1.hash
+
+b3.prev == b2.hash
